@@ -13,7 +13,7 @@ class HeroEl extends HTMLElement {
         <div class="info">
           <h2>What is Logo?</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam!</p>
-          <button>Buy Now!</button>
+          <a href="#">Buy Now!</button>
         </div>
       </div>
     `
