@@ -4,7 +4,7 @@ import toogleNav from './toogle'
 import '../../styles/nav/main.css'
 import '../../styles/nav/mobile.css'
 
-class Finder extends HTMLElement {
+class MyNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <nav id="nav" class="">
@@ -24,4 +24,4 @@ class Finder extends HTMLElement {
     toogleNav()
   }
 }
-customElements.define('my-nav', Finder)
+customElements.define('my-nav', MyNav)

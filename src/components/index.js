@@ -4,6 +4,7 @@ import "../styles/reset.css";
 
 // component
 import "./nav";
+import "./heroEl";
 
 const root = document.getElementById("root");
 root.innerHTML = `
