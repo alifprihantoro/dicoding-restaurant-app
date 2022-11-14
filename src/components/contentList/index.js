@@ -1,6 +1,7 @@
 // get data from json
 import DATA from '../../DATA.json'
 import shortDescription from './description'
+import { iconStar, iconMap } from './icon'
 // styling
 import './main.css'
 
@@ -11,16 +12,20 @@ class ContentList extends HTMLElement {
       <h2 class="title">list restaurants</h2>
       <div class="content">
         ${restaurants
-          .map((e) => {
+          .map((e, i) => {
             return `
               <div class="card">
                 <div class="cover-image">
                   <img
-                    class="img-card"
                     src="${e.pictureId}"
-                    alt=""
+                    alt="${e.name}"
                   />
-                  <h4>rating:${e.rating}</h4>
+                  <button 
+                    value="${i}"
+                    class="detail-show"
+                    >show detail</button>
+                  <h4 class="right">${iconStar()} ${e.rating}</h4>
+                  <h4>${iconMap()} ${e.city}</h4>
                   <h3>${e.name}</h3>
                 </div>
                 <p>${shortDescription(e.description)}</p>
@@ -30,11 +35,13 @@ class ContentList extends HTMLElement {
           .join('')}
       </div>
     `
-    const imgEL = document.getElementsByClassName('img-card')
+    const imgEL = document.getElementsByClassName('detail-show')
     for (let i = 0; i < imgEL.length; i++) {
       const imgKlick = imgEL[i]
-      imgKlick.onclick = function () {
-        alert(restaurants[i].name)
+      imgKlick.onclick = function (e) {
+        const INDEX_DATA = e.target.value
+        const { name } = restaurants[INDEX_DATA]
+        
       }
     }
   }

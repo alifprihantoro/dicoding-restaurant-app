@@ -14,14 +14,20 @@
 /* cover image */
 .content > .card > .cover-image {
   position: relative;
+  background-color: black;
+  border-radius: 15px;
+  cursor: pointer;
 }
 /* img */
 .content > .card > .cover-image > img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1.5/1;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
+}
+.content > .card > .cover-image:hover img {
+  opacity: 0.5;
 }
 /* title and rating default */
 .content > .card > .cover-image h4,
@@ -30,11 +36,33 @@
   background-color: var(--main-400);
   color: #fff;
 }
+/* button */
+.content > .card > .cover-image button {
+  /* hide detail btn */
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: var(--main-300);
+  cursor: pointer;
+}
+/* show btn detail */
+.content > .card > .cover-image:hover button {
+  display: block;
+}
 /* rating */
 .content > .card > .cover-image h4 {
   top: 0;
   padding: 0.5rem;
-  border-radius: 0 0 15px 0;
+  border-radius: 15px 0 15px 0;
+}
+.content > .card > .cover-image h4.right {
+  right: 0;
+  border-radius: 0 15px 0 15px;
 }
 /* title */
 .content > .card > .cover-image h3 {
@@ -46,4 +74,13 @@
   font-size: 1.1rem;
   padding: 0.7rem 0;
   border-radius: 0 0 15px 15px;
+}
+/* paragraf */
+.content > .card > p {
+  margin: 0.5rem 0 0 0.2rem;
+}
+/* icon star */
+.icon-star {
+  background: url('https://api.iconify.design/bxs/star-half.svg') no-repeat
+    center center / contain;
 }
