@@ -1,8 +1,8 @@
 import toogleNav from './toogle'
 
 // style
-import '../../styles/nav/main.css'
-import '../../styles/nav/mobile.css'
+import './main.css'
+import './mobile.css'
 
 class MyNav extends HTMLElement {
   connectedCallback() {

@@ -1,6 +1,6 @@
 // style
-import '../../styles/heroEl/main.css'
-import '../../styles/heroEl/mobile.css'
+import './main.css'
+import './mobile.css'
 
 // image
 import image from '../../public/images/heros/hero-image_1.jpg'

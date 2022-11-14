@@ -32,6 +32,8 @@
 }
 /* button heroes */
 .hero-element > .info > a {
+  display: block;
+  width:max-content;
   background-color: var(--main-400);
   padding: 1em;
   border-radius: 15px;
