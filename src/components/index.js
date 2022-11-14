@@ -6,6 +6,7 @@ import "../styles/reset.css";
 import "./nav";
 import "./heroEl";
 import "./contentList";
+import "./footer";
 
 const root = document.getElementById("root");
 root.innerHTML = `
