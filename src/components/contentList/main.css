@@ -16,7 +16,6 @@
   position: relative;
   background-color: black;
   border-radius: 15px;
-  cursor: pointer;
 }
 /* img */
 .content > .card > .cover-image > img {
