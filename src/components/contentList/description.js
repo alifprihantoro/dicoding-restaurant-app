@@ -1,5 +1,5 @@
 /**
- * split word/minify word
+ * handle description cut word
  * @arg {string} DESCRIPTION_DATA - get full data description
  * @returns {string}
  */

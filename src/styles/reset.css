@@ -30,3 +30,46 @@ section {
   padding: .5rem;
   background: rgb(0, 0, 0,.05);
 }
+/* font family */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a,
+p,
+blockquote {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+::selection {
+  color:#fff;
+  background: var(--main-400);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-300);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-400);
+  border-radius:15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-500);
+}
