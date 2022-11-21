@@ -8,7 +8,7 @@ class MyNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <nav id="nav" class="">
-        <header>logo</header>
+        <header>MuryP Food</header>
         <div id="nav-btn">
           <span></span>
           <span></span>

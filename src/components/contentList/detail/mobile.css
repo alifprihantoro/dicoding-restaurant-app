@@ -1,11 +1,11 @@
 @media only screen and (max-width: 900px) {
   .flex {
     display: block;
-    margin:auto;
   }
-.pembungkus .flex img {
-    max-width:80vw;
+  .pembungkus .flex img {
+    display: block;
+    max-width: 80vw;
     max-height: 80vw;
-    text-align: center;
+    margin:auto;
   }
 }
