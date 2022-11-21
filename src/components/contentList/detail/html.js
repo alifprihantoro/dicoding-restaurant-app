@@ -1,4 +1,5 @@
 import './main.css'
+import './mobile.css'
 import { iconStar, iconMap } from '../icon'
 import { iconClose } from './icon'
 /**
