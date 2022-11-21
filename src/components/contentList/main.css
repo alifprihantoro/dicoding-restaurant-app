@@ -1,3 +1,8 @@
+/*
+* TODO: 
+* - title 
+*/
+
 /* cover content */
 .content {
   display: grid;
@@ -24,6 +29,7 @@
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
+  transition:.5s;
 }
 .content > .card > .cover-image:hover img {
   opacity: 0.5;
@@ -38,7 +44,8 @@
 /* button */
 .content > .card > .cover-image button {
   /* hide detail btn */
-  display: none;
+  display: block;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,10 +55,11 @@
   border-radius: 15px;
   background-color: var(--main-300);
   cursor: pointer;
+  transition:.5s ease-in-out;
 }
 /* show btn detail */
 .content > .card > .cover-image:hover button {
-  display: block;
+  opacity: 1;
 }
 /* rating */
 .content > .card > .cover-image h4 {

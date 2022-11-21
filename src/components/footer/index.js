@@ -1,4 +1,5 @@
 import "./main.css";
+import "./mobile.css";
 class MyFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
