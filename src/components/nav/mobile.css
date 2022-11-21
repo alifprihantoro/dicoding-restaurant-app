@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
   #nav-btn {
-    width: 50px;
-    height: 45px;
+    width: 35px;
+    height: 25px;
     position: relative;
     margin-left: auto;
     -webkit-transform: rotate(0deg);
@@ -18,7 +18,7 @@
   #nav-btn span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 5px;
     width: 100%;
     background: var(--main-400);
     border-radius: 9px;
@@ -40,16 +40,16 @@
   }
 
   #nav-btn span:nth-child(2) {
-    top: 18px;
+    top: 10px;
   }
 
   #nav-btn span:nth-child(3) {
-    top: 36px;
+    top: 20px;
   }
 
   /* after toogle */
   .open > #nav-btn span:nth-child(1) {
-    top: 18px;
+    top: 10px;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -o-transform: rotate(135deg);
@@ -62,7 +62,7 @@
   }
 
   .open > #nav-btn span:nth-child(3) {
-    top: 18px;
+    top: 10px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
@@ -70,17 +70,19 @@
   }
   /* end icon btn */
   #nav ul {
-    display: none;
-  }
-  #nav.open ul {
+    transition: .5s;
     display: block;
     position: absolute;
-    top:4rem;
-    width:100%;
+    top: 60px;
+    left: -999px;
+    width: 100%;
     background-color: var(--main-200);
     z-index: 9;
   }
-  #nav.open li a{
+  #nav.open ul {
+    left: 0;
+  }
+  #nav.open li a {
     display: block;
   }
   #nav.open li a:hover {
