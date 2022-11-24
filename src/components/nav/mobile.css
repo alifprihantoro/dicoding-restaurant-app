@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+  button#nav-btn{
+    background-color: var(--main-100);
+  }
   #nav-btn {
     width: 35px;
     height: 25px;
@@ -14,7 +17,6 @@
     transition: 0.5s ease-in-out;
     cursor: pointer;
   }
-
   #nav-btn span {
     display: block;
     position: absolute;

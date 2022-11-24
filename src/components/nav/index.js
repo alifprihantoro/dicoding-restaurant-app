@@ -9,11 +9,11 @@ class MyNav extends HTMLElement {
     this.innerHTML = `
       <nav id="nav" class="">
         <header>MuryP Food</header>
-        <div id="nav-btn">
+        <button id="nav-btn">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#">Favorite</a></li>

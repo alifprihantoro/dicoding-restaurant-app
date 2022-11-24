@@ -77,9 +77,14 @@ blockquote {
   border:var(--main-400)
 }
 .skip-link {
-  opacity: 0;
-  position: fixed;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: var(--main-400);
+  color: var(--main-100);
+  padding: 8px;
+  z-index: 100;
 }
-.skip-link a:active{
-  opacity: 1;
+.skip-link:focus {
+   top: 0;
 }
