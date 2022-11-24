@@ -21,14 +21,35 @@ export default function htmlContent(DATA) {
         <button id="close-detail">${iconClose()}</button>
         <div class="flex">
           <img
+            tabindex="0"
             src="${pictureId}"
             alt="${name}"
           />
           <div class="list">
-            <h2>${name}</h2>
-            <h3>${iconStar()} ${rating}</h3>
-            <h3>${iconMap()} ${city}</h3>
-            <p>${description}</p>
+            <h2
+              title="judul"
+              tabindex="0"
+            >
+              ${name}
+            </h2>
+            <h3
+              title="rating"
+              tabindex="0"
+            >
+              ${iconStar()} ${rating}
+            </h3>
+            <h3
+              title="city"
+              tabindex="0"
+            >
+              ${iconMap()} ${city}
+            </h3>
+            <p
+              title="description"
+              tabindex="0"
+            >
+              ${description}
+            </p>
           </div>
         </div>
       </div>

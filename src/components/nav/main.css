@@ -22,6 +22,6 @@
   padding: 1rem;
 }
 #nav li a:hover{
-  background-color: var(--main-200);
+  background-color: var(--main-300);
   color:var(--main-100);
 }

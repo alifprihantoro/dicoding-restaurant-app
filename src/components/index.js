@@ -12,6 +12,7 @@ import "./footer";
 
 const root = document.getElementById("root");
 root.innerHTML = `
+  <a href="#maincontent" class="skip-link">Menuju ke konten</a>
   <my-nav></my-nav>
   <my-hero></my-hero>
   <content-list></content-list>

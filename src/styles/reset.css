@@ -73,3 +73,13 @@ blockquote {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--main-500);
 }
+*:focus,*:active{
+  border:var(--main-400)
+}
+.skip-link {
+  opacity: 0;
+  position: fixed;
+}
+.skip-link a:active{
+  opacity: 1;
+}

@@ -11,8 +11,8 @@ class HeroEl extends HTMLElement {
       <div class="hero-element">
         <img src="${image}" alt="">
         <div class="info">
-          <h2>What is Logo?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam!</p>
+          <h2 tabindex='0'>What is Logo?</h2>
+          <p tabindex='0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam!</p>
           <a href="#">Buy Now!</button>
         </div>
       </div>

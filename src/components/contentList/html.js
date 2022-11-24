@@ -3,10 +3,17 @@ import { iconStar, iconMap } from './icon'
 
 export default function htmlContentListRestaurant(restaurants) {
   return `
-    <h2 class='title'><span>list restaurants</span></h2>
+    <h2
+      class="title"
+      tabindex="0"
+      id='maincontent'
+    >
+      <span>list restaurants</span>
+    </h2>
     <div class="content">
       ${restaurants
         .map((e, i) => {
+          const ti = i == 0 ? 2 : i + 2
           return `
             <div class="card">
               <div
@@ -16,13 +23,35 @@ export default function htmlContentListRestaurant(restaurants) {
                 <img
                   src="${e.pictureId}"
                   alt="${e.name}"
+                  tabindex="0"
                 />
                 <button>show detail</button>
-                <h4 class="right">${iconStar()} ${e.rating}</h4>
-                <h4>${iconMap()} ${e.city}</h4>
-                <h3>${e.name}</h3>
+                <h4
+                  class="right"
+                  tabindex="0"
+                  title="rating ${e.rating}"
+                >
+                  ${iconStar()} ${e.rating}
+                </h4>
+                <h4
+                  tabindex="0"
+                  title="city ${e.city}"
+                >
+                  ${iconMap()} ${e.city}
+                </h4>
+                <h3
+                  tabindex="0"
+                  title="nama restaurant ${e.name}"
+                >
+                  ${e.name}
+                </h3>
               </div>
-              <p>${shortDescription(e.description)}</p>
+              <p
+                title="description"
+                tabindex="0"
+              >
+                ${shortDescription(e.description)}
+              </p>
             </div>
           `
         })
