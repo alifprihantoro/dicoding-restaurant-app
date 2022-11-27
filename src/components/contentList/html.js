@@ -13,7 +13,6 @@ export default function htmlContentListRestaurant(restaurants) {
     <div class="content">
       ${restaurants
         .map((e, i) => {
-          const ti = i == 0 ? 2 : i + 2
           return `
             <div class="card">
               <div
@@ -21,7 +20,7 @@ export default function htmlContentListRestaurant(restaurants) {
                 value="${i}"
               >
                 <img
-                  src="${e.pictureId}"
+                  src="https://restaurant-api.dicoding.dev/images/small/${e.pictureId}"
                   alt="${e.name}"
                   tabindex="0"
                 />

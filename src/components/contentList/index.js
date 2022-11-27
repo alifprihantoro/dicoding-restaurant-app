@@ -1,5 +1,3 @@
-// get data from json
-import DATA from '../../DATA.json'
 import handleClickDetail from './handleOpen'
 import htmlContentListRestaurant from './html'
 // styling
@@ -11,9 +9,14 @@ import './mobile.css'
  */
 class ContentList extends HTMLElement {
   connectedCallback() {
-    const { restaurants } = DATA // data restorant from json
-    this.innerHTML = htmlContentListRestaurant(restaurants) // show content
-    handleClickDetail(restaurants)
+    const URL = 'https://restaurant-api.dicoding.dev/list'
+    fetch(URL)
+      .then((res) => res.json())
+      .then((DATAS) => {
+        const { restaurants } = DATAS
+        this.innerHTML = htmlContentListRestaurant(restaurants) // show content
+        handleClickDetail(restaurants)
+      })
   }
 }
 customElements.define('content-list', ContentList)
