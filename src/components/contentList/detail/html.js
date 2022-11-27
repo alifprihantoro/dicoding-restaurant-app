@@ -18,16 +18,16 @@ export default function htmlContent(DATA) {
   return `
     <div id="detail-restaurant">
       <div class="pembungkus">
-        <button id="close-detail">${iconClose()}</button>
+        <button id="close-detail" name='button close'>${iconClose()}</button>
         <div class="flex">
           <img
             tabindex="0"
             src="${pictureId}"
-            alt="${name}"
+            alt="image ${name}"
           />
           <div class="list">
             <h2
-              title="judul"
+              title="title"
               tabindex="0"
             >
               ${name}
