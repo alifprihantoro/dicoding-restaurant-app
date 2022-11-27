@@ -88,8 +88,7 @@
 .content > .card > p {
   margin: 0.5rem 0 0 0.2rem;
 }
-/* icon star */
-.icon-star {
-  background: url('https://api.iconify.design/bxs/star-half.svg') no-repeat
-    center center / contain;
+/* icon */
+h4.right svg {
+    fill: white;
 }
