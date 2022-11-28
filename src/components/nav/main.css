@@ -1,5 +1,5 @@
 #nav {
-  background-color: var(--main-100);
+  background-color: var(--main-400);
   font-weight: bold;
   display: flex;
   flex:1 1 auto;
@@ -10,7 +10,7 @@
   height: 30px;
 }
 #nav *{
-  color: var(--main-400);
+  color: var(--main-100);
 }
 /* nav list */
 #nav ul{

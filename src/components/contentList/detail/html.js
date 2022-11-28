@@ -67,12 +67,15 @@ export default function htmlContent(DATA) {
           </div>
         </div>
         <div class="rating">
-          <h3>User Rating ${countRating(rating)}</h3>
-          <h3>
+        <div class="left">
+          <div class='rating-header'>User Rating ${countRating(rating)}</div>
+          <div class='rating-bottom'>
             ${rating} average based on ${DATA.customerReviews.length} reviews.
-          </h3>
-          <br>
+          </div>
+        </div>
+        <div class="right">
           ${reviewUser(DATA)}
+        </div>
         </div>
       </div>
     </div>
