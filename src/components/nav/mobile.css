@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   button#nav-btn{
-    background-color: var(--main-100);
+    background-color: var(--main-400);
   }
   #nav-btn {
     width: 60px;
@@ -22,7 +22,7 @@
     position: absolute;
     height: 10px;
     width: 100%;
-    background: var(--main-400);
+    background: var(--main-200);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -78,7 +78,7 @@
     top: 60px;
     left: -999px;
     width: 100%;
-    background-color: var(--main-200);
+    background-color: var(--main-300);
     z-index: 9;
   }
   #nav.open ul {
@@ -88,6 +88,8 @@
     display: block;
   }
   #nav.open li a:hover {
-    background-color: var(--main-300);
+    background-color: var(--main-200);
+    color:var(--main-300);
+    font-weight: bold;
   }
 }
