@@ -1,5 +1,6 @@
 import htmlContent from './html'
 import handleClosedeatail from './handleClose'
+import {API_URL_DERTAIL} from '../../../config'
 /**
  * handle detail restaurant
  * @arg {object} RESTAURANT
@@ -11,7 +12,7 @@ import handleClosedeatail from './handleClose'
  * @arg {number} rating
  */
 export default function handleDetailListPost(RESTAURANT) {
-  const URL = 'https://restaurant-api.dicoding.dev/detail/' + RESTAURANT.id
+  const URL = API_URL_DERTAIL + RESTAURANT.id
   fetch(URL)
     .then((res) => res.json())
     .then(({ restaurant }) => {

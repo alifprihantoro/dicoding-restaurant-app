@@ -1,0 +1,16 @@
+.flex{
+  display: flex;
+}
+.pembungkus .flex img {
+  width: 300px;
+  height: 300px;
+  padding:1rem;
+  border-radius:2rem;
+}
+.pembungkus .list > * {
+  padding: 1rem;
+}
+.pembungkus .list > *:nth-child(2n){
+  background-color: var(--main-300);
+  color:var(--main-100);
+}

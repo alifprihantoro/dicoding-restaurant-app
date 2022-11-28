@@ -1,4 +1,4 @@
-import { iconStar as halfStarIcon } from '../../icon'
+import { iconStar as halfStarIcon } from '../../../icon'
 import { fullStarIcon, emtyStarIcon } from './icon'
 export default function countRating(rating) {
   const MODULUS = rating % 1

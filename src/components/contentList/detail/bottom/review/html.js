@@ -1,5 +1,5 @@
 import "./main.css";
-export default function reviewUser({ customerReviews }) {
+export default function reviewUser(customerReviews) {
   const LIST_REVIEW_HTML= customerReviews.map((DATAS_REVIEW) => {
     const { name, date, review } = DATAS_REVIEW
     return `
@@ -10,6 +10,6 @@ export default function reviewUser({ customerReviews }) {
         <p class='review-comment' name='comment review'>${review}</p>
       </div>
     `
-  })
+  }).join('')
   return LIST_REVIEW_HTML
 }

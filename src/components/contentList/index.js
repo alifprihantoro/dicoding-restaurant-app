@@ -1,3 +1,4 @@
+import { API_URL_LIST } from '../../config'
 import handleClickDetail from './handleOpen'
 import htmlContentListRestaurant from './html'
 // styling
@@ -9,7 +10,7 @@ import './mobile.css'
  */
 class ContentList extends HTMLElement {
   connectedCallback() {
-    const URL = 'https://restaurant-api.dicoding.dev/list'
+    const URL = API_URL_LIST
     fetch(URL)
       .then((res) => res.json())
       .then((DATAS) => {
