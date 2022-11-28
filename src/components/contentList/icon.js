@@ -1,5 +1,8 @@
-export const iconStar = () => {
-  return `
+import { fullStarIcon } from './detail/bottom/star/icon'
+
+export const iconStar = (rating) => {
+  if (rating < 5) {
+    return `
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="1em"
@@ -12,6 +15,8 @@ export const iconStar = () => {
       />
     </svg>
   `
+  }
+  return fullStarIcon()
 }
 export const iconMap = () => {
   return `

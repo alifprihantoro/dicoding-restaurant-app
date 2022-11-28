@@ -28,46 +28,6 @@
 .pembungkus button svg{
   fill:white;
 }
-.flex{
-  display: flex;
-}
-.pembungkus .flex img {
-  width: 300px;
-  height: 300px;
-  padding:1rem;
-  border-radius:2rem;
-}
-.pembungkus .list > * {
-  padding: 1rem;
-}
-.pembungkus .list > *:nth-child(2n){
-  background-color: var(--main-300);
-  color:var(--main-100);
-}
-.rating{
-  width:90%;
-  padding: 1rem;
-  border-radius:15px;
-  background-color: var(--main-400);
-  display:flex;
-  margin:auto;
-  height: 100px;
-  margin-top: 1rem;
-}
-.rating .left{
-  color:white;
-  fill:white;
-  background-color: rgb(255, 255, 255,.1);
-  padding: 1rem;
-  border-radius:15px;
-  margin-bottom:1rem;
-}
-.rating .right{
-  width:fit-content;
-  margin-left: auto;
-  overflow: auto;
-  padding-right: .5rem;
-}
 .rating-header {
   font-weight:bold;
   font-size: 1.5rem;

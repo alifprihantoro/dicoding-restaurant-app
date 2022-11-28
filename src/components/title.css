@@ -1,4 +1,4 @@
-h2.title {
+.title {
   font-size: 1rem;
   margin: 2rem auto;
   text-align: center;
@@ -10,7 +10,7 @@ h2.title {
   line-height: 0;
   border-radius: 15px;
 }
-h2.title span {
+.title span {
   background-color: var(--main-400);
   padding: 0.5rem;
   border-radius: 15px;
