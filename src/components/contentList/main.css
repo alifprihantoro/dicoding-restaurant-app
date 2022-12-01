@@ -42,7 +42,7 @@
   color: #fff;
 }
 /* button */
-.content > .card > .cover-image button {
+.button-list-image {
   /* hide detail btn */
   display: block;
   opacity: 0;
