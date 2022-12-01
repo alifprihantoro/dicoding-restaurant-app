@@ -18,7 +18,7 @@ export default function htmlContentListRestaurant(restaurants) {
                   alt="${e.name}"
                   tabindex="0"
                 />
-                <button>show detail</button>
+                <button class='button-list-image'>show detail</button>
                 <h4 class="right" tabindex="0" title="rating ${e.rating}" >
                   ${iconStar(e.rating)} ${e.rating}
                 </h4>

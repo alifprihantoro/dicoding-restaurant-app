@@ -1,6 +1,7 @@
 #detail-restaurant {
   position: fixed;
   top: 0;
+  right: 0;
   padding: 1rem;
   width: 100%;
   height: 100vh;

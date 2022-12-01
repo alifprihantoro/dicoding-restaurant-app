@@ -15,9 +15,7 @@ export default function handleClickDetail(restaurants) {
     const IMG_EL_TARGET = IMG_EL[i] // <HTMLElement>
     IMG_EL_TARGET.onclick = function (e) {
       const INDEX_DATA = e.path[1].getAttribute('value') // <number> get value number klick
-      handleDetailListPost(restaurants[INDEX_DATA])
-      const URL = '#detail-content-root'
-      window.location.href = URL;
+      handleDetailListPost(restaurants[INDEX_DATA],IMG_EL[INDEX_DATA])
     }
   }
 }
