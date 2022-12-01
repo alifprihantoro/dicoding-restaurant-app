@@ -3,7 +3,7 @@ import './main.css'
 import './mobile.css'
 
 // image
-import image from '../../public/images/heros/hero-image_1.jpg'
+import image from './image/hero-image_1.jpg'
 import component from '../../utils/component'
 
 const HTML = `

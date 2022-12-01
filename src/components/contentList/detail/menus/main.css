@@ -13,4 +13,5 @@
   border-radius: 15px;
   white-space: nowrap;
   font-weight: bold;
+  cursor: pointer;
 }

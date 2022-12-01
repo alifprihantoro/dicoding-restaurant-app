@@ -19,4 +19,4 @@ const CONTENT = `
   <my-footer></my-footer>
 `
 render('#root', CONTENT)
-
+import './swRegister'

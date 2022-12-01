@@ -1,4 +1,5 @@
 import './main.css'
+import './mobile.css'
 import { iconClose } from './icon'
 import bottomDetail from './bottom'
 import shortInfo from './shortInfo'
