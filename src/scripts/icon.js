@@ -63,6 +63,18 @@ export const iconStar = (rating) => {
 }
 export const iconMap = () => {
   return `
-    <svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 384 512"><path fill="white" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="0.75em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+  `
+}
+
+export const iconLove = () => {
+  return `
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812Q2.775 11.5 2.388 10.4Q2 9.3 2 8.15Q2 5.8 3.575 4.225Q5.15 2.65 7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55q1.175-.55 2.475-.55q2.35 0 3.925 1.575Q22 5.8 22 8.15q0 1.15-.387 2.25q-.388 1.1-1.363 2.412q-.975 1.313-2.625 2.963q-1.65 1.65-4.175 3.925Z"/></svg>
+  `
+}
+
+export const iconFindStore = () => {
+  return `
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M11.9 10.9a6.53 6.53 0 0 0-1.9 4.6V12H4v4h6v-.5c0 .85.17 1.7.5 2.5H2v-6H1v-2l1-5h16l.89 4.46a6.47 6.47 0 0 0-6.99 1.44M18 2H2v2h16V2m5.39 19L22 22.39l-3.12-3.07c-.69.43-1.51.68-2.38.68c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5s4.5 2 4.5 4.5c0 .88-.25 1.71-.69 2.4l3.08 3.1M19 15.5a2.5 2.5 0 0 0-5 0a2.5 2.5 0 0 0 5 0Z"/></svg>
   `
 }

@@ -2,13 +2,22 @@ import { FavoriteRestaurantIdb } from '../../../service/tesDb'
 import $ from '../../../utils/element'
 
 export default function eventLoveBtn(restaurant) {
-  $('#love-btn').onclick = () => {
+  const toogleBtn = (isFirst) => {
     FavoriteRestaurantIdb.getRestaurant(restaurant.id).then((e) => {
       if (e == undefined) {
-        FavoriteRestaurantIdb.putRestaurant(restaurant)
+        !isFirst && FavoriteRestaurantIdb.putRestaurant(restaurant)
+        togleStyle(true)
         return
       }
-      FavoriteRestaurantIdb.deleteRestaurant(restaurant.id)
+      !isFirst && FavoriteRestaurantIdb.deleteRestaurant(restaurant.id)
+      togleStyle(false)
     })
+  }
+  const togleStyle = (isLove) => {
+    $('#love-btn svg').style.fill = isLove ? 'white' : 'red'
+  }
+  toogleBtn(true)
+  $('#love-btn').onclick = () => {
+    toogleBtn(false)
   }
 }
