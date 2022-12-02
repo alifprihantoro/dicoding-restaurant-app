@@ -1,6 +1,6 @@
-import { IMG_URL } from '../../config'
+import { IMG_URL } from '../../../../config'
 import shortDescription from './description'
-import { iconStar, iconMap } from './icon'
+import { iconStar, iconMap } from '../../../../icon'
 
 export default function htmlContentListRestaurant(restaurants) {
   return `

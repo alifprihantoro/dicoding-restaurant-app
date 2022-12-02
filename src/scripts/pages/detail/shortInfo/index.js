@@ -1,16 +1,21 @@
-import { IMG_URL } from '../../../../config'
-import { iconMap } from '../../icon'
+import { IMG_URL } from '../../../config'
+import { iconMap } from '../../../icon'
 // style
 import './main.css'
 import './mobile.css'
-export default function shortInfo({ name, description, pictureId, city, address, }) {
+export default function shortInfo({
+  name,
+  description,
+  pictureId,
+  city,
+  address,
+}) {
   return `
     <div class="flex">
-      <img
-        tabindex="0"
-        src="${IMG_URL + pictureId}"
-        alt="image ${name}"
-      />
+      <div class="img-detail">
+        <img tabindex="0" src="${IMG_URL + pictureId}" alt="image ${name}" />
+        <button id="love-btn">love</button>
+      </div>
       <div class="list">
         <h2 title="title" tabindex="0" >
           ${name}
