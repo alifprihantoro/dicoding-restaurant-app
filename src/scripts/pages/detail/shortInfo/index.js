@@ -1,5 +1,5 @@
 import { IMG_URL } from '../../../config'
-import { iconMap } from '../../../icon'
+import { iconLove, iconMap } from '../../../icon'
 // style
 import './main.css'
 import './mobile.css'
@@ -14,7 +14,7 @@ export default function shortInfo({
     <div class="flex">
       <div class="img-detail">
         <img tabindex="0" src="${IMG_URL + pictureId}" alt="image ${name}" />
-        <button id="love-btn">love</button>
+        <button id="love-btn">${iconLove()}</button>
       </div>
       <div class="list">
         <h2 title="title" tabindex="0" >
