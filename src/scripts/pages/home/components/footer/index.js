@@ -1,5 +1,4 @@
-import component from "../../utils/component";
-import render from "../../utils/render";
+import component from "../../../../utils/component";
 import "./main.css";
 import "./mobile.css";
 const HTML = `

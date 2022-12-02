@@ -4,7 +4,7 @@ import './mobile.css'
 
 // image
 import image from './image/hero-image_1.jpg'
-import component from '../../utils/component'
+import component from '../../../../utils/component'
 
 const HTML = `
   <div class="hero-element">

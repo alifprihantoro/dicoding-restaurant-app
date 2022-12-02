@@ -3,7 +3,7 @@ import toogleNav from './toogle'
 // style
 import './main.css'
 import './mobile.css'
-import component from '../../utils/component'
+import component from '../../../../utils/component'
 
 const HTML = `
   <nav id="nav" class="" >

@@ -1,6 +1,6 @@
-import { API_URL_LIST } from '../../config'
-import component from '../../utils/component'
-import get from '../../utils/fetch'
+import { API_URL_LIST } from '../../../../config'
+import component from '../../../../utils/component'
+import get from '../../../../utils/fetch'
 import handleClickDetail from './handleOpen'
 import htmlContentListRestaurant from './html'
 // styling

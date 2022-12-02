@@ -1,4 +1,4 @@
-import handleDetailListPost from './detail'
+import handleDetailListPost from '../../../detail'
 /**
  * handle click for detail
  * @arg {object[]} restaurants
@@ -10,7 +10,7 @@ import handleDetailListPost from './detail'
  * @arg {number} rating
  */
 export default function handleClickDetail(restaurants) {
-  const IMG_EL = document.getElementsByClassName('detail-show') // <HTMLCollection>
+  const IMG_EL = document.querySelectorAll('.detail-show') // <HTMLCollection>
   for (let i = 0; i < IMG_EL.length; i++) {
     const IMG_EL_TARGET = IMG_EL[i] // <HTMLElement>
     IMG_EL_TARGET.onclick = function (e) {
