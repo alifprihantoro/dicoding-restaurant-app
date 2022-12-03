@@ -13,7 +13,7 @@ import './mobile.css'
 const URL = API_URL_LIST
 get(URL, (DATAS) => {
   const { restaurants } = DATAS
-  const HTML = htmlContentListRestaurant(restaurants) // show content
+  const HTML = htmlContentListRestaurant({ restaurants, title: 'List' }) // show content
   component({
     HTML,
     NAME_TAG: 'content-list',
