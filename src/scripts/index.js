@@ -8,3 +8,6 @@ import './pages/home'
 
 // service
 import './service/swRegister'
+window.addEventListener('hashchange', function () {
+  console.log(window.location.href)
+})

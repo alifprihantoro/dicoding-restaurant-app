@@ -2,10 +2,10 @@ import { IMG_URL } from '../../../../config'
 import shortDescription from './description'
 import { iconStar, iconMap } from '../../../../icon'
 
-export default function htmlContentListRestaurant(restaurants) {
+export default function htmlContentListRestaurant({restaurants,title}) {
   return `
-    <h2 class="title" tabindex="0" id='maincontent' >
-      <span>list restaurants</span>
+    <h2 id="title-list" class="title" tabindex="0" id='maincontent' >
+      <span>${title} Restaurants</span>
     </h2>
     <div class="content">
       ${restaurants
