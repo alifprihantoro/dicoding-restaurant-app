@@ -1,17 +1,19 @@
-import { FavoriteRestaurantIdb } from '../../../service/indexDb'
+import FavoriteRestaurantIdb from '../../../service/indexDb'
 import $ from '../../../utils/element'
 
 export default function eventLoveBtn(restaurant) {
   const toogleBtn = (isFirst) => {
     FavoriteRestaurantIdb.getRestaurant(restaurant.id).then((e) => {
-      console.log(e)
-      if (e == undefined) {
-        console.log('hello')
-        togleStyle(isFirst ? false : true)
+      if (e === undefined) {
+        // eslint-disable-next-line no-use-before-define
+        togleStyle(!isFirst)
+        // eslint-disable-next-line no-unused-expressions
         !isFirst && FavoriteRestaurantIdb.putRestaurant(restaurant)
         return
       }
-      togleStyle(isFirst ? true : false)
+      // eslint-disable-next-line no-use-before-define
+      togleStyle(!!isFirst)
+      // eslint-disable-next-line no-unused-expressions
       !isFirst && FavoriteRestaurantIdb.deleteRestaurant(restaurant.id)
     })
   }
