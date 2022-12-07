@@ -27,3 +27,6 @@ button#love-btn svg{
   background-color: var(--main-300);
   color:var(--main-100);
 }
+.pembungkus .list > *:nth-child(2n) svg{
+  fill:white;
+}
