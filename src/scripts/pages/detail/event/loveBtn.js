@@ -1,4 +1,4 @@
-import { FavoriteRestaurantIdb } from '../../../service/tesDb'
+import { FavoriteRestaurantIdb } from '../../../service/indexDb'
 import $ from '../../../utils/element'
 
 export default function eventLoveBtn(restaurant) {

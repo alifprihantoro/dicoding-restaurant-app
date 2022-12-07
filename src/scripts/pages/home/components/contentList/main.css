@@ -1,8 +1,3 @@
-/*
-* TODO: 
-* - title 
-*/
-
 /* cover content */
 .content {
   display: grid;
@@ -89,6 +84,6 @@
   margin: 0.5rem 0 0 0.2rem;
 }
 /* icon */
-h4.right svg {
+h4 svg {
     fill: white;
 }
