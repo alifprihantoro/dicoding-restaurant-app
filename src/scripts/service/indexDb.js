@@ -1,6 +1,5 @@
 import { openDB } from 'idb'
-import { CONFIG } from '../config'
-const { DATABASE_NAME, DATABASE_VERSION, OBJECT_STORE_NAME } = CONFIG
+import { DATABASE_NAME, DATABASE_VERSION, OBJECT_STORE_NAME } from '../config'
 
 const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
   upgrade(database) {

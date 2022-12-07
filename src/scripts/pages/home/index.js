@@ -7,11 +7,13 @@ import './components/heroEl'
 import './components/contentList'
 import './components/footer'
 
-const CONTENT = `
-  <a href="#maincontent" class="skip-link">Menuju ke konten</a>
-  <my-nav></my-nav>
-  <my-hero></my-hero>
-  <content-list></content-list>
-  <my-footer></my-footer>
-`
-render('#root', CONTENT)
+export default function renderHome() {
+  const CONTENT = `
+    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
+    <my-nav></my-nav>
+    <my-hero></my-hero>
+    <content-list></content-list>
+    <my-footer></my-footer>
+  `
+  render('#root', CONTENT)
+}
