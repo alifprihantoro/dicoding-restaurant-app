@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "webpack --config webpack.dev.js",
     "dev": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "start": "http-server dist -o",
     "test": "karma start",
     "lint": "eslint ./src/**/*.js"
   },
@@ -24,6 +24,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
     "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
     "jasmine-ajax": "^4.0.0",
     "jasmine-core": "^4.2.0",
     "karma": "^5.2.3",
