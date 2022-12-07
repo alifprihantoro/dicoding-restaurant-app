@@ -4,10 +4,12 @@ import '../styles/reset.css'
 import '../styles/mobile.css'
 
 // component
-import './pages/home'
+import renderHome from './pages/home'
 
 // service
-import './service/swRegister'
-window.addEventListener('hashchange', function () {
-  console.log(window.location.href)
+import { swRegister } from './service/swRegister'
+
+window.addEventListener('load', () => {
+  renderHome()
+  swRegister()
 })

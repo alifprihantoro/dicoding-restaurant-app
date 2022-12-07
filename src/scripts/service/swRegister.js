@@ -1,4 +1,4 @@
-const swRegister = async () => {
+export const swRegister = async () => {
   if (!('serviceWorker' in navigator)) {
     alert('browser tidak mendukung offline mode!')
     return
@@ -9,4 +9,3 @@ const swRegister = async () => {
     console.log('Failed to register service worker', error)
   }
 }
-swRegister()
