@@ -5,7 +5,7 @@ import './main.css'
 import './mobile.css'
 import component from '../../../../utils/component'
 import $ from '../../../../utils/element'
-import { FavoriteRestaurantIdb } from '../../../../service/indexDb'
+import FavoriteRestaurantIdb from '../../../../service/indexDb'
 import htmlContentListRestaurant from '../contentList/html'
 import handleClickDetail from '../contentList/handleOpen'
 

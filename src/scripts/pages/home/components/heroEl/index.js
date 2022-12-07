@@ -16,4 +16,4 @@ const HTML = `
     </div>
   </div>
 `
-component({HTML,NAME_TAG:'my-hero'})
+component({ HTML, NAME_TAG: 'my-hero' })

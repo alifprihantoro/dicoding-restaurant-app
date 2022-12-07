@@ -3,6 +3,7 @@ import { iconLove, iconMap } from '../../../icon'
 // style
 import './main.css'
 import './mobile.css'
+
 export default function shortInfo({
   name,
   description,

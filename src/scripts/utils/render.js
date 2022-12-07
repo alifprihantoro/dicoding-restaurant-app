@@ -1,6 +1,9 @@
 import $ from './element'
 
-export default function render(element, html, callBack = function (a,e) {}) {
+function defaultFunction(element, html) {
+  return { element, html }
+}
+export default function render(element, html, callBack = defaultFunction) {
   $(element).innerHTML = html
-  callBack($(element),html)
+  callBack($(element), html)
 }

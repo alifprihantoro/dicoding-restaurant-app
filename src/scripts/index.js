@@ -7,7 +7,7 @@ import '../styles/mobile.css'
 import renderHome from './pages/home'
 
 // service
-import { swRegister } from './service/swRegister'
+import swRegister from './service/swRegister'
 
 window.addEventListener('load', () => {
   renderHome()

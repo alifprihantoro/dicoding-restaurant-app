@@ -1,8 +1,6 @@
 export default function listMenu({ className, listMenus, title }) {
   const CONTENT = listMenus
-    .map(({ name }) => {
-      return ` <span class="list">${name}</span> `
-    })
+    .map(({ name }) => ` <span class="list">${name}</span> `)
     .join('')
 
   const COUNTAINER = `
