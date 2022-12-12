@@ -9,7 +9,6 @@ import './components/footer'
 
 export default function renderHome() {
   const CONTENT = `
-    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
     <my-nav></my-nav>
     <my-hero></my-hero>
     <content-list></content-list>

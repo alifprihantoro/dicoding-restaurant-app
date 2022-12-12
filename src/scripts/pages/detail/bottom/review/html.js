@@ -5,10 +5,10 @@ export default function reviewUser(customerReviews) {
     const { name, date, review } = DATAS_REVIEW
     return `
       <div class="review-container">
-        <div class="review-head" name='name and date review'>
+        <div tabindex="0" class="review-head" name='name and date review'>
           ${name} - ${date}
         </div>
-        <p class='review-comment' name='comment review'>${review}</p>
+        <p tabindex="0" class='review-comment' name='comment review'>${review}</p>
       </div>
     `
   }).join('')

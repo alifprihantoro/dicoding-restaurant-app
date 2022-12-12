@@ -1,9 +1,9 @@
 /* cover content */
 .content {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 30% 30% 30%;
   gap: 1rem;
-  width: 100%;
+  justify-content: center;
 }
 /* card */
 .content > .card {

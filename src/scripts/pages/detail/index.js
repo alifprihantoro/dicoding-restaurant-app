@@ -4,6 +4,7 @@ import eventAddLoveBtn from './event/loveBtn'
 import { API_URL_DERTAIL } from '../../config'
 import get from '../../utils/fetch'
 import render from '../../utils/render'
+import $ from '../../utils/element'
 /**
  * handle detail restaurant
  * @arg {object} RESTAURANT
@@ -14,14 +15,19 @@ import render from '../../utils/render'
  * @arg {string} city
  * @arg {number} rating
  */
-export default function handleDetailListPost(RESTAURANT, EL_LIST) {
+export default function handleDetailListPost(RESTAURANT) {
   const URL = API_URL_DERTAIL + RESTAURANT.id
   get(URL, ({ restaurant }) => {
-    const callBack = (element) => {
-      eventCLoseBtn(element, EL_LIST)
+    const callBack = () => {
       eventAddLoveBtn(RESTAURANT)
-      element.focus()
+      // eslint-disable-next-line no-restricted-globals
+      location.href = '#detail-restaurant'
     }
-    render('#detail-content-root', htmlContent(restaurant), callBack)
+    const HTML = `
+      <my-nav></my-nav>
+      ${htmlContent(restaurant)}
+      <my-footer></my-footer>
+      `
+    render('#root', HTML, callBack)
   })
 }
