@@ -8,23 +8,29 @@ import $ from '../../../../utils/element'
 import FavoriteRestaurantIdb from '../../../../service/indexDb'
 import htmlContentListRestaurant from '../contentList/html'
 import handleClickDetail from '../contentList/handleOpen'
+import render from '../../../../utils/render'
+import renderHome from '../..'
 
 const CALLBACK = () => {
   toogleNav()
   $('#nav-favorite').onclick = () => {
     FavoriteRestaurantIdb.getAllRestaurants().then((restaurants) => {
-      $('content-list').innerHTML = htmlContentListRestaurant({
-        restaurants,
-        title: 'Favorite',
-      })
-      handleClickDetail(restaurants)
+      const HTML = `
+  <my-nav></my-nav>
+  ${htmlContentListRestaurant({
+    restaurants,
+    title: 'Favorite',
+  })}
+  <my-footer></my-footer>
+  `
+      render('#root', HTML, handleClickDetail(restaurants))
+      // eslint-disable-next-line no-restricted-globals
+      location.href = '#title-list'
     })
   }
   // if home click
   $('#nav-home').onclick = () => {
-    const NEW_ELEMEN = document.createElement('content-list')
-    $('content-list').after(NEW_ELEMEN)
-    $('content-list').remove()
+    renderHome()
   }
 }
 const HTML = `

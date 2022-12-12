@@ -1,6 +1,5 @@
 import './style/main.css'
 import './style/mobile.css'
-import { iconClose } from '../../icon'
 import bottomDetail from './bottom'
 import shortInfo from './shortInfo'
 import menusRestaurant from './menus'
@@ -26,9 +25,6 @@ export default function htmlContent(DATA) {
   return `
     <div id="detail-restaurant">
       <div class="pembungkus">
-        <button id="close-detail" name="button close" >
-          ${iconClose()}
-        </button>
         ${shortInfo(DATA)} 
         ${menusRestaurant(DATA)} 
         ${bottomDetail(DATA)}
