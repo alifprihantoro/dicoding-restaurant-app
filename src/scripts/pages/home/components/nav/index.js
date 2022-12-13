@@ -9,6 +9,7 @@ import FavoriteRestaurantIdb from '../../../../service/indexDb'
 import htmlContentListRestaurant from '../contentList/html'
 import handleClickDetail from '../contentList/handleOpen'
 import render from '../../../../utils/render'
+// eslint-disable-next-line import/no-cycle
 import renderHome from '../..'
 
 const CALLBACK = () => {
@@ -16,6 +17,7 @@ const CALLBACK = () => {
   $('#nav-favorite').onclick = () => {
     FavoriteRestaurantIdb.getAllRestaurants().then((restaurants) => {
       const HTML = `
+  <a id="favorite-btn" href="#title-list" class="skip-link">Menuju ke konten</a>
   <my-nav></my-nav>
   ${htmlContentListRestaurant({
     restaurants,
@@ -25,12 +27,14 @@ const CALLBACK = () => {
   `
       render('#root', HTML, handleClickDetail(restaurants))
       // eslint-disable-next-line no-restricted-globals
-      location.href = '#title-list'
+      location.href = '#favorite-btn'
     })
   }
   // if home click
   $('#nav-home').onclick = () => {
     renderHome()
+    // eslint-disable-next-line no-restricted-globals
+    location.href = '#home-btn'
   }
 }
 const HTML = `

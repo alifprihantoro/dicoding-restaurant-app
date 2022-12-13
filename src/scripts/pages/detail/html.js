@@ -23,12 +23,10 @@ import menusRestaurant from './menus'
  */
 export default function htmlContent(DATA) {
   return `
-    <div id="detail-restaurant">
-      <div class="pembungkus">
-        ${shortInfo(DATA)} 
-        ${menusRestaurant(DATA)} 
-        ${bottomDetail(DATA)}
-      </div>
+    <div class="pembungkus">
+      ${shortInfo(DATA)} 
+      ${menusRestaurant(DATA)} 
+      ${bottomDetail(DATA)}
     </div>
   `
 }
