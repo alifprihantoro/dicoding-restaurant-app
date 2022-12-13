@@ -1,10 +1,8 @@
 import htmlContent from './html'
-import eventCLoseBtn from './event/closeBtn'
 import eventAddLoveBtn from './event/loveBtn'
 import { API_URL_DERTAIL } from '../../config'
 import get from '../../utils/fetch'
 import render from '../../utils/render'
-import $ from '../../utils/element'
 /**
  * handle detail restaurant
  * @arg {object} RESTAURANT
@@ -21,9 +19,10 @@ export default function handleDetailListPost(RESTAURANT) {
     const callBack = () => {
       eventAddLoveBtn(RESTAURANT)
       // eslint-disable-next-line no-restricted-globals
-      location.href = '#detail-restaurant'
+      location.href = '#detail-restaurant-btn'
     }
     const HTML = `
+      <a id="detail-restaurant-btn" href="#detail-restaurant" class="skip-link">Menuju ke konten</a>
       <my-nav></my-nav>
       ${htmlContent(restaurant)}
       <my-footer></my-footer>

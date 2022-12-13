@@ -13,7 +13,7 @@ export default function shortInfo({
 }) {
   return `
     <div class="flex">
-      <div class="img-detail">
+      <div id="detail-restaurant" class="img-detail">
         <img tabindex="0" src="${IMG_URL + pictureId}" alt="image ${name}" />
         <button name='love button' id="love-btn">${iconLove()}</button>
       </div>
