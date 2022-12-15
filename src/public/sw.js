@@ -22,10 +22,6 @@ self.addEventListener('activate', (event) => {
       )),
   )
 })
-// self.addEventListener('message', (event) => {
-//   // menampilkan data/pesan yang dikirim client
-//   console.log(`Client mengirim pesan: ${event.data}`)
-// })
 // eslint-disable-next-line no-restricted-globals
 self.addEventListener('fetch', (event) => {
   event.respondWith(

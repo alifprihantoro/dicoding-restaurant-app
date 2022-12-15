@@ -19,10 +19,10 @@ export default function handleDetailListPost(RESTAURANT) {
     const callBack = () => {
       eventAddLoveBtn(RESTAURANT)
       // eslint-disable-next-line no-restricted-globals
-      location.href = '#detail-restaurant-btn'
+      location.href = '#'
     }
     const HTML = `
-      <a id="detail-restaurant-btn" href="#detail-restaurant" class="skip-link">Menuju ke konten</a>
+      <a href="#detail-restaurant" class="skip-link">Menuju ke konten</a>
       <my-nav></my-nav>
       ${htmlContent(restaurant)}
       <my-footer></my-footer>
