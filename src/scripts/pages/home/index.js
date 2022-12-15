@@ -1,6 +1,7 @@
 import render from '../../utils/render'
 // style
 import './title.css'
+import './warning.css'
 // component
 import './components/nav'
 import './components/heroEl'
@@ -9,7 +10,7 @@ import './components/footer'
 
 export default function renderHome() {
   const CONTENT = `
-    <a id="home-btn" href="#title-list" class="skip-link">Menuju ke konten</a>
+    <a href="#title-list" class="skip-link">Menuju ke konten</a>
     <my-nav></my-nav>
     <my-hero></my-hero>
     <content-list></content-list>

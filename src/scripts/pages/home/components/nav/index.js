@@ -17,7 +17,7 @@ const CALLBACK = () => {
   $('#nav-favorite').onclick = () => {
     FavoriteRestaurantIdb.getAllRestaurants().then((restaurants) => {
       const HTML = `
-  <a id="favorite-btn" href="#title-list" class="skip-link">Menuju ke konten</a>
+  <a href="#title-list" class="skip-link">Menuju ke konten</a>
   <my-nav></my-nav>
   ${htmlContentListRestaurant({
     restaurants,
@@ -25,16 +25,12 @@ const CALLBACK = () => {
   })}
   <my-footer></my-footer>
   `
-      render('#root', HTML, handleClickDetail(restaurants))
-      // eslint-disable-next-line no-restricted-globals
-      location.href = '#favorite-btn'
+      render('#root', HTML, () => handleClickDetail(restaurants))
     })
   }
   // if home click
   $('#nav-home').onclick = () => {
     renderHome()
-    // eslint-disable-next-line no-restricted-globals
-    location.href = '#home-btn'
   }
 }
 const HTML = `
@@ -47,8 +43,8 @@ const HTML = `
     </button>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a id="nav-favorite" href="#title-list">Favorite</a></li>
-      <li><a id="nav-home" href="#title-list">List Restaurants</a></li>
+      <li><a id="nav-favorite" href="#">Favorite</a></li>
+      <li><a id="nav-home" href="#">List Restaurants</a></li>
       <li><a href="https://github.com/alifprihantoro">About Us</a></li>
     </ul>
   </nav>

@@ -80,6 +80,8 @@ blockquote {
   position: absolute;
   top: -40px;
   left: 0;
+}
+.btn,.skip-link {
   background-color: var(--main-400);
   color: var(--main-100);
   padding: 8px;

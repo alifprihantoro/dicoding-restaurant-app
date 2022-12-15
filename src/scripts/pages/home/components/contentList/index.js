@@ -13,10 +13,11 @@ import './mobile.css'
 const URL = API_URL_LIST
 get(URL, (DATAS) => {
   const { restaurants } = DATAS
-  const HTML = htmlContentListRestaurant({ restaurants, title: 'List' }) // show content
+  const HTML = htmlContentListRestaurant({ restaurants, title: 'List' })
   component({
     HTML,
     NAME_TAG: 'content-list',
-    CALLBACK: () => handleClickDetail(restaurants),
+    // eslint-disable-next-line no-undef
+    CALLBACK: () => handleClickDetail(DATAS.restaurants),
   })
 })

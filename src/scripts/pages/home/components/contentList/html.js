@@ -3,13 +3,25 @@ import shortDescription from './description'
 import { iconStar, iconMap } from '../../../../icon'
 
 export default function htmlContentListRestaurant({ restaurants, title }) {
+  if (restaurants.length === 0) {
+    return `
+      <h2 id="title-list" class="title" tabindex="0" id="maincontent">
+        <span>${title} Restaurants wkwk</span>
+      </h2>
+      <div class="warning">
+        <p>anda belum memasukkan favorite restaurants</p>
+        <a class="btn" href="/">return to home</a>
+      </div>
+    `
+  }
   return `
     <h2 id="title-list" class="title" tabindex="0" id="maincontent">
       <span>${title} Restaurants</span>
     </h2>
     <div class="content">
       ${restaurants
-    .map((e, i) => `
+    .map(
+      (e, i) => `
         <div class="card">
           <div class="detail-show cover-image" value="${i}">
             <img
@@ -32,7 +44,8 @@ export default function htmlContentListRestaurant({ restaurants, title }) {
             ${shortDescription(e.description)}
           </p>
         </div>
-      `)
+      `,
+    )
     .join('')}
     </div>
   `
