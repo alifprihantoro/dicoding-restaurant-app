@@ -10,6 +10,7 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
+    // files: ['specs/**/*Spec.js'],
     files: ['specs/**/*Spec.js'],
 
     // list of files / patterns to exclude
@@ -19,13 +20,10 @@ module.exports = function (config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'specs/**/*Spec.js': ['webpack', 'sourcemap'],
+      // 'specs/addFavoriteRestaurantSpec.js': ['webpack', 'sourcemap'],
     },
-
+    // webpack: webPack,
     webpack: {
-      // karma watches the test entry points
-      // (you don't need to specify the entry option)
-      // webpack watches dependencies
-      // webpack configuration
       devtool: 'inline-source-map',
       mode: 'development',
     },
@@ -65,7 +63,6 @@ module.exports = function (config) {
         flags: ['--no-sandbox'],
       },
     },
-
     browserConsoleLogOptions: {
       terminal: true,
       level: '',

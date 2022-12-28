@@ -1,5 +1,5 @@
 import htmlContent from './html'
-import eventAddLoveBtn from './event/loveBtn'
+import eventAddLoveBtn from './event/love'
 import { API_URL_DERTAIL } from '../../config'
 import get from '../../utils/fetch'
 import render from '../../utils/render'

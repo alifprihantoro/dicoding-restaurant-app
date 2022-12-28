@@ -1,5 +1,3 @@
-import './style/main.css'
-import './style/mobile.css'
 import bottomDetail from './bottom'
 import shortInfo from './shortInfo'
 import menusRestaurant from './menus'

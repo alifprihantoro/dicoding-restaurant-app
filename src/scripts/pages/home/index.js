@@ -1,7 +1,4 @@
 import render from '../../utils/render'
-// style
-import './title.css'
-import './warning.css'
 // component
 import './components/nav'
 import './components/heroEl'
