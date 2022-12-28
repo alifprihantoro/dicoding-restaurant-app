@@ -1,15 +1,10 @@
 import FavoriteRestaurantIdb from '../../../../service/indexDb'
+import $ from '../../../../utils/element'
 
 export default async function dbLove(restaurant) {
-  const favoriteCek = await FavoriteRestaurantIdb.getRestaurant(restaurant.id).then((e) => e)
-  if (favoriteCek === undefined) {
-    const addToDb = await FavoriteRestaurantIdb.putRestaurant(restaurant)
-      .then((e) => e)
-      .catch(() => 'err')
-    return addToDb
+  if ($('#love-btn svg').style.fill === 'white') {
+    await FavoriteRestaurantIdb.putRestaurant(restaurant)
+  } else {
+    await FavoriteRestaurantIdb.deleteRestaurant(restaurant.id)
   }
-  const addToDb = await FavoriteRestaurantIdb.deleteRestaurant(restaurant.id)
-    .then((e) => e)
-    .catch(() => 'err')
-  return addToDb
 }
