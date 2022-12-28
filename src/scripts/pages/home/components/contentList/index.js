@@ -3,9 +3,6 @@ import component from '../../../../utils/component'
 import get from '../../../../utils/fetch'
 import handleClickDetail from './handleOpen'
 import htmlContentListRestaurant from './html'
-// styling
-import './main.css'
-import './mobile.css'
 
 /**
  * handle list restaurant

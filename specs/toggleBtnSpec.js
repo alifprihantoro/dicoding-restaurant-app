@@ -1,10 +1,11 @@
 /* eslint-disable */
 import { API_URL_LIST } from '../src/scripts/config'
 import { iconLove } from '../src/scripts/icon'
-import eventLoveBtn from '../src/scripts/pages/detail/event/loveBtn'
+import eventLoveBtn from '../src/scripts/pages/detail/event/love'
 import FavoriteRestaurantIdb from '../src/scripts/service/indexDb'
 import $ from '../src/scripts/utils/element'
 import get from '../src/scripts/utils/fetch'
+import getApiRestaurant from './helper/get'
 
 describe('like btn :', () => {
   const BTN = '#love-btn svg'
@@ -29,22 +30,19 @@ describe('like btn :', () => {
     const COLOR = $(BTN).style.fill
     expect(COLOR).toEqual('white')
   })
-  it('love btn fill red when klick', () => {
-    get(API_URL_LIST, async restaurants => {
-      const restaurant = restaurants.restaurants[0]
-      await eventLoveBtn(restaurant)
-      await $('#love-btn').click()
-      const COLOR = $(BTN).style.fill
-      expect(COLOR).toEqual('red')
-    })
+  it('love btn fill red when click if fill on white', async () => {
+    const restaurant = await getApiRestaurant()
+    await eventLoveBtn(await restaurant)
+    await $('#love-btn').dispatchEvent(new Event('click'))
+    const COLOR = await $(BTN).style.fill
+    expect(COLOR).toEqual('red')
   })
-  it('love btn fill white when klick again', () => {
-    get(API_URL_LIST, async restaurants => {
-      const restaurant = restaurants.restaurants[0]
-      await eventLoveBtn(restaurant)
-      await $('#love-btn').click()
-      const COLOR = $(BTN).style.fill
-      expect(COLOR).toEqual('white')
-    })
+  it('love btn fill white when click if fill on red', async () => {
+    $(BTN).style.fill = 'red'
+    const restaurant = await getApiRestaurant()
+    await eventLoveBtn(await restaurant)
+    await $('#love-btn').dispatchEvent(new Event('click'))
+    const COLOR = await $(BTN).style.fill
+    expect(COLOR).toEqual('white')
   })
 })

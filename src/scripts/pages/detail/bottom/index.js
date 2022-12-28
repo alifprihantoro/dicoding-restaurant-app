@@ -1,6 +1,5 @@
 import reviewUser from './review/html'
 import countRating from './star'
-import './main.css'
 
 export default function bottomDetail(DATAS) {
   const { rating, customerReviews } = DATAS
