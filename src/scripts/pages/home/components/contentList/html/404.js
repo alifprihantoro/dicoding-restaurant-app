@@ -1,7 +1,7 @@
 export default function notFound(title) {
   return `
       <h2 id="title-list" class="title" tabindex="0" id="maincontent">
-        <span>${title} Restaurants wkwk</span>
+        <span>${title} Restaurants</span>
       </h2>
       <div class="warning">
         <p>anda belum memasukkan favorite restaurants</p>

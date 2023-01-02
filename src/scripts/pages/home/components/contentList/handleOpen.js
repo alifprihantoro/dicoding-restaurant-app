@@ -14,8 +14,8 @@ export default function handleClickDetail(restaurants) {
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < IMG_EL.length; i++) {
     const IMG_EL_TARGET = IMG_EL[i] // <HTMLElement>
-    const clickImage = (e) => {
-      const INDEX_DATA = e.path[1].getAttribute('value') // <number> get value number klick
+    const clickImage = () => {
+      const INDEX_DATA = IMG_EL_TARGET.getAttribute('value') // <number> get value number klick
       handleDetailListPost(restaurants[INDEX_DATA], IMG_EL[INDEX_DATA])
     }
     IMG_EL_TARGET.onclick = clickImage
