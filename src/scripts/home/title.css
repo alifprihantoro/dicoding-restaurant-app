@@ -1,0 +1,18 @@
+.title {
+  font-size: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  width: 90%;
+  border: 5px solid var(--main-400);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  line-height: 0;
+  border-radius: 15px;
+}
+.title span {
+  background-color: var(--main-400);
+  padding: 0.5rem;
+  border-radius: 15px;
+  color: #fff;
+}

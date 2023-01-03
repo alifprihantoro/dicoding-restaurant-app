@@ -1,0 +1,10 @@
+footer{
+  background-color: var(--main-400);
+  color:var(--main-200);
+  font-weight:bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 4rem;
+  border-radius:15px;
+  margin-top:1rem;
+}

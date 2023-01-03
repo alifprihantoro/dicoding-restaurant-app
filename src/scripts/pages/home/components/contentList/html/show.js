@@ -1,4 +1,4 @@
-import { IMG_URL } from '../../../../../config'
+import { IMG_URL_MEDIUM, IMG_URL_SMALL } from '../../../../../config'
 import shortDescription from '../description'
 import { iconStar, iconMap } from '../../../../../icon'
 
@@ -13,11 +13,8 @@ export default function showList(title, restaurants) {
       (e, i) => `
         <div class="card">
           <div class="detail-show cover-image" value="${i}">
-            <img
-              src="${IMG_URL + e.pictureId}"
-              alt="${e.name}"
-              tabindex="0"
-            />
+            <img class="lazyload" data-src="${IMG_URL_SMALL + e.pictureId}" 
+            alt="${e.name}">
             <button class="button-list-image">show detail</button>
             <h4 class="right" tabindex="0" title="rating ${e.rating}">
               ${iconStar(e.rating)} ${e.rating}
@@ -39,3 +36,9 @@ export default function showList(title, restaurants) {
     </div>
   `
 }
+// <picture>
+//   <source media="(max-width: 600px)" 
+//     srcset="${IMG_URL_SMALL + e.pictureId}">
+//     <img class="lazyload" data-src="${IMG_URL_MEDIUM + e.pictureId}" 
+//     alt="${e.name}">
+// </picture>

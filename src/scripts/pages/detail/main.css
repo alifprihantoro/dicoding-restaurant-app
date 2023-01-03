@@ -1,0 +1,23 @@
+.pembungkus {
+  width:90vw;
+  max-width: 90%;
+  margin: auto;
+  padding:1rem;
+  border-radius: 15px;
+  overflow-y:auto;
+}
+.pembungkus button{
+  background-color: var(--main-400);
+  padding: 5px;
+  border-radius:5px;
+  width:fit-content;
+  margin-left: auto;
+  display:block;
+}
+.pembungkus button svg{
+  fill:white;
+}
+.rating-header {
+  font-weight:bold;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,22 @@
+/* tablet displat */
+@media only screen and (max-width: 900px) {
+  .content {
+    grid-template-columns: auto auto;
+  }
+  .rating{
+    display: block;
+    height: auto;
+  }
+.rating .right,.review-container{
+    margin-left:0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    display: block;
+  }
+  /* margin */
+  .content > .card {
+    margin-bottom: 1rem;
+  }
+}
