@@ -29,7 +29,6 @@ const CALLBACK = () => {
   // if home click
   $('#nav-home').onclick = () => {
     renderHome()
-    console.log('click')
   }
 }
 const HTML = `

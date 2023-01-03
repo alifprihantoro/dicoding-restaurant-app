@@ -1,4 +1,4 @@
-import { IMG_URL_MEDIUM, IMG_URL_SMALL } from '../../../../../config'
+import { IMG_URL_SMALL } from '../../../../../config'
 import shortDescription from '../description'
 import { iconStar, iconMap } from '../../../../../icon'
 
@@ -36,9 +36,3 @@ export default function showList(title, restaurants) {
     </div>
   `
 }
-// <picture>
-//   <source media="(max-width: 600px)" 
-//     srcset="${IMG_URL_SMALL + e.pictureId}">
-//     <img class="lazyload" data-src="${IMG_URL_MEDIUM + e.pictureId}" 
-//     alt="${e.name}">
-// </picture>

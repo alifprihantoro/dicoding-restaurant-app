@@ -9,10 +9,6 @@ import '../styles/mobile.css'
 // component
 import render from './pages/home'
 
-// service
-import swRegister from './service/swRegister'
-
 window.addEventListener('load', () => {
   render()
-  swRegister()
 })
