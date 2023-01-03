@@ -1,0 +1,17 @@
+.menus {
+  padding:1rem;
+}
+.content-menus {
+  width: 90%;
+  margin: auto;
+}
+.menus .list {
+  padding: 1rem;
+  background-color: var(--main-400);
+  color: var(--main-100);
+  line-height: 3.5rem;
+  border-radius: 15px;
+  white-space: nowrap;
+  font-weight: bold;
+  cursor: pointer;
+}
