@@ -11,5 +11,6 @@ module.exports = {
   },
   rules: {
     semi: ['error', 'never'],
+    'no-restricted-globals': 0,
   },
 }
