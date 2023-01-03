@@ -5,8 +5,10 @@ import FavoriteRestaurantIdb from '../../../../service/indexDb'
 import htmlContentListRestaurant from '../contentList/html'
 import handleClickDetail from '../contentList/handleOpen'
 import render from '../../../../utils/render'
-// eslint-disable-next-line import/no-cycle
-import renderHome from '../..'
+import renderHome from '../../render'
+// styles
+import './main.css'
+import './mobile.css'
 
 const CALLBACK = () => {
   toogleNav()
@@ -27,6 +29,7 @@ const CALLBACK = () => {
   // if home click
   $('#nav-home').onclick = () => {
     renderHome()
+    console.log('click')
   }
 }
 const HTML = `

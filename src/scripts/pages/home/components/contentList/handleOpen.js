@@ -1,4 +1,3 @@
-import handleDetailListPost from '../../../detail'
 /**
  * handle click for detail
  * @arg {object[]} restaurants
@@ -16,7 +15,11 @@ export default function handleClickDetail(restaurants) {
     const IMG_EL_TARGET = IMG_EL[i] // <HTMLElement>
     const clickImage = () => {
       const INDEX_DATA = IMG_EL_TARGET.getAttribute('value') // <number> get value number klick
-      handleDetailListPost(restaurants[INDEX_DATA], IMG_EL[INDEX_DATA])
+      import('../../../detail')
+        .then((module) => module.default)
+        .then((handleDetailListPost) => {
+          handleDetailListPost(restaurants[INDEX_DATA], IMG_EL[INDEX_DATA])
+        })
     }
     IMG_EL_TARGET.onclick = clickImage
   }

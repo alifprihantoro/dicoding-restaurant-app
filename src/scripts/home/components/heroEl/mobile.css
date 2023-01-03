@@ -1,8 +1,0 @@
-@media only screen and (max-width: 600px) {
-  .hero-element > img {
-    max-height: 100vh;
-  }
-  .hero-element > .info {
-    width: 90%;
-  }
-}
