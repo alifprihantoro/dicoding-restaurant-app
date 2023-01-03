@@ -1,5 +1,8 @@
 // image
 import component from '../../../../utils/component'
+// styles
+import './main.css'
+import './mobile.css'
 
 const HTML = `
   <div class="hero-element">

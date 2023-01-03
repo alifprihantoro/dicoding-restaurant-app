@@ -1,4 +1,6 @@
 import listMenu from './list'
+import './main.css'
+import './desktop.css'
 
 export default function menusRestaurant({ menus }) {
   const { foods, drinks } = menus

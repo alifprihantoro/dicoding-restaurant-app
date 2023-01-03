@@ -1,3 +1,5 @@
+import './main.css'
+
 export default function reviewUser(customerReviews) {
   const LIST_REVIEW_HTML = customerReviews.map((DATAS_REVIEW) => {
     const { name, date, review } = DATAS_REVIEW

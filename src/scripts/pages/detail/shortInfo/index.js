@@ -1,5 +1,8 @@
-import { IMG_URL, IMG_URL_MEDIUM } from '../../../config'
+import { IMG_URL_MEDIUM } from '../../../config'
 import { iconLove, iconMap } from '../../../icon'
+// style
+import './main.css'
+import './mobile.css'
 
 export default function shortInfo({
   name,
