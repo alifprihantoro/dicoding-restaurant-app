@@ -9,7 +9,7 @@ const HTML = `
       <picture>
         <source media="(max-width: 600px)" 
           srcset="/hero-image_1.min.jpg">
-        <img src="/hero-image_1.jpg" >
+        <img src="/hero-image_1.jpg" alt="cover header">
       </picture>
     <div class="info">
       <h2 tabindex='0'>What is Logo?</h2>
