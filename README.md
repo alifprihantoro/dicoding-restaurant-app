@@ -30,8 +30,8 @@ Project ini menggunakan teknologi berikut:
 
 Untuk menjalankan project ini, ikuti langkah-langkah berikut:
 
-1. Clone repository ini ke lokal Anda dengan perintah `git clone https://github.com/alifprihantoro/restaurant-apps`
-2. Masuk ke folder project dengan perintah `cd restaurant-apps`
+1. Clone repository ini ke lokal Anda dengan perintah `git clone https://github.com/alifprihantoro/dicoding-restaurant-app.git`
+2. Masuk ke folder project dengan perintah `cd dicoding-restaurant-app.git`
 3. Install dependensi dengan perintah `npm install`
 4. Jalankan project dengan perintah `npm run dev`
 
